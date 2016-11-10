@@ -1,0 +1,45 @@
+
+//-
+A test for Kun language.
+-//
+func foo(x)
+    return x*x
+endfunc
+//res := foo(2)
+print(foo(true))
+print("-----------\n")
+
+i := 10 
+while i > 0 do 
+    print(i * (i + i )) 
+    print("\n")
+    i -- 
+endwhile 
+
+for j := 1, 10 do 
+    if j > 7 then 
+        print(j)
+    elseif j > 4 then 
+        print(j*j)
+    else 
+        print(j*j*j)
+    endif
+    print("\n")
+endfor
+
+func foo2(x, y)
+    for i := x, y do 
+
+        if i > (x + y) / 2 then 
+            print(i)
+            print("\n")
+        else 
+            print(i * i)
+            print("\n")
+        endif
+
+    endfor
+endfunc
+
+foo2(1, 10)
+
